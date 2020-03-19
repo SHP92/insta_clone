@@ -1,0 +1,31 @@
+{
+  "name": "insta_clone",
+  "version": "1.0.0",
+  "description": "insta_clone",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SHP92/insta_clone.git"
+  },
+  "author": "SHP92",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SHP92/insta_clone/issues"
+  },
+  "homepage": "https://github.com/SHP92/insta_clone#readme",
+  "dependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "babel-node": "0.0.1-security",
+    "dotenv": "^8.2.0",
+    "graphql-tools": "^4.0.7",
+    "graphql-yoga": "^1.18.3",
+    "merge-graphql-schemas": "^1.7.6",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2"
+  }
+}
