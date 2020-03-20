@@ -8,7 +8,8 @@ type User {
   commnets: [Comment!]!
   followers: [User]
   followings: [User]
-  rooms: [Room!]! 
+  rooms: [Room!]!
+  secret: String
 }
 
 type Post {
