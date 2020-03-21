@@ -8,7 +8,7 @@ import { authenticateJwt } from './passport';
 
 const PORT = process.env.PORT || 4000;
 
-const server = new GraphQLServer({ schema, context: { prisma } });
+const server = new GraphQLServer({ schema, context: ({ request }) => ({ request })});
 server.express.use(logger('dev'));
 server.express.use(authenticateJwt);
 

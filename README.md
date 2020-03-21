@@ -2,9 +2,9 @@
 
 - [X] create account
 - [X] request secret key
-- [ ] confirm secret key (log in)
-- [ ] like / unlike a photo
-- [ ] comment a photo
+- [X] confirm secret key (log in)
+- [X] like / unlike a photo
+- [X] comment a photo
 - [ ] search by user
 - [ ] search by loaction
 - [ ] see user profile

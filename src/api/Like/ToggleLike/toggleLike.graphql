@@ -1,0 +1,6 @@
+type Query {
+    something: String
+},
+type Mutation {
+    toggleLike(postId: String!): Boolean
+}
