@@ -26,28 +26,30 @@ type Post {
   user: User!
   loaction: String
   caption: String!
-  file: [File!]!
+  files: [File!]!
   likes: [Like!]!
   comments: [Comment!]!
   isLiked: Boolean!
+  likeCount: Int!
 }
 
 type FullPost {
   post: Post!
+  files: [File!]!
   comments: [Comment!]!
-  likeCount: Int!
+  user: User!
 }
 
 type File {
   id: ID!
   url: String!
-  post: Post!
+  post: Post
 }
 
 type Like {
   id: ID!
   user: User!
-  post: Post!
+  post: Post
 }
 
 type Comment {

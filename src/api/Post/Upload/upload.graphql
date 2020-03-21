@@ -1,0 +1,6 @@
+type Query {
+    something: String
+},
+type Mutation {
+    uploadPost(caption: String!, files: [String]): Post!
+}

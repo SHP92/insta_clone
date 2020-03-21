@@ -30,3 +30,9 @@ export const COMMENT_FRAGMENT = `
         }
     }
 `;
+
+export const FULLPOST_FRAGMENT = `
+    fragment on FullpostParts on FullPost {
+        
+    }
+`;
