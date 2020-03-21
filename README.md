@@ -1,12 +1,12 @@
-## User Stories
+## features
 
 - [X] create account
 - [X] request secret key
 - [X] confirm secret key (log in)
 - [X] like / unlike a photo
 - [X] comment a photo
-- [ ] search by user
-- [ ] search by loaction
+- [X] search users
+- [X] search posts
 - [ ] see user profile
 - [ ] follow / unfollow user
 - [ ] see the full photo
