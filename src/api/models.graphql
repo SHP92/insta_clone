@@ -5,11 +5,20 @@ type User {
   bio: String
   posts: [Post!]!
   likes: [Like!]!
-  commnets: [Comment!]!
+  comments: [Comment!]!
   followers: [User]
   followings: [User]
   rooms: [Room!]!
   secret: String
+  amIFollowing: Boolean!
+  itsMe: Boolean!
+}
+
+type UserProfile {
+    user: User!
+    posts: [Post!]!
+    followers: [User!]!
+    followings: [User!]!
 }
 
 type Post {
@@ -19,7 +28,14 @@ type Post {
   caption: String!
   file: [File!]!
   likes: [Like!]!
-  commnets: [Comment!]!
+  comments: [Comment!]!
+  isLiked: Boolean!
+}
+
+type FullPost {
+  post: Post!
+  comments: [Comment!]!
+  likeCount: Int!
 }
 
 type File {

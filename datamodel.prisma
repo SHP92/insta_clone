@@ -5,7 +5,7 @@ type User {
   bio: String
   posts: [Post!]!
   likes: [Like!]!
-  commnets: [Comment!]!
+  comments: [Comment!]!
   followers: [User] @relation(name: "FollowRelation")
   followings: [User] @relation(name: "FollowRelation")
   rooms: [Room!]!
@@ -21,7 +21,7 @@ type Post {
   caption: String!
   file: [File!]!
   likes: [Like!]!
-  commnets: [Comment!]!
+  comments: [Comment!]!
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
 }

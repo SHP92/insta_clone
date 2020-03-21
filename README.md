@@ -9,9 +9,9 @@
 - [X] search posts
 - [X] follow / unfollow user
 - [X] edit my profile
-- [ ] see my profile
+- [X] see my profile
 - [X] see user profile
-- [ ] see the full photo
+- [X] see the full photo
 - [ ] upload a photo
 - [ ] edit / delete the photo
 - [ ] see the feed
