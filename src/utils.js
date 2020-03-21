@@ -1,9 +1,6 @@
-import dotenv from 'dotenv';
-import path from 'path';
-dotenv.config({ path: path.resolve(__dirname, ".env")});
-
 import nodemailer from 'nodemailer';
 import mg from 'nodemailer-mailgun-transport';
+import jwt from 'jsonwebtoken';
 
 import { adjectives, nouns } from './words';
 
@@ -13,6 +10,10 @@ export const generateSecret = () => {
 
     return `${adjectives[randomNumber]} ${nouns[randomNumber]}`;
 };
+
+export const generateToken = id => (
+    jwt.sign({ id }, process.env.SECRET_KEY)
+);
 
 const sendMail = email => {
     const options = {
@@ -25,7 +26,6 @@ const sendMail = email => {
 
     return client.sendMail(email);
 };
-
 
 export const sendSecretMail = (adress, secret) => {
     const email = {
