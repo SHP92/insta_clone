@@ -1,0 +1,6 @@
+type Query {
+    something: String
+},
+type Mutation {
+    editUser(name: String, email: String, bio: String): User!
+}

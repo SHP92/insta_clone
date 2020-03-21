@@ -1,0 +1,11 @@
+type Query {
+    seeMyProfile: User!
+    me: ProfileResponse!
+},
+
+type ProfileResponse {
+    user: User!
+    posts: [Post!]!
+    followers: [User!]!
+    followings: [User!]!
+}
