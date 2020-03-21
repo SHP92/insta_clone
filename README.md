@@ -7,11 +7,10 @@
 - [X] comment a photo
 - [X] search users
 - [X] search posts
-- [ ] see user profile
-- [ ] follow / unfollow user
-- [ ] see the full photo
+- [X] follow / unfollow user
 - [ ] edit my profile
-- [ ] create account
+- [ ] see user profile
+- [ ] see the full photo
 - [ ] upload a photo
 - [ ] edit / delete the photo
 - [ ] see the feed

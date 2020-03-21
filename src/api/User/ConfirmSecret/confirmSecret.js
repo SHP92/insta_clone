@@ -8,6 +8,10 @@ export default {
             const user = await prisma.user({ email });
 
             if (user.secret === secret){
+                await prisma.updateUser({ 
+                    where: { id: user.id},
+                    data: { secret: '' }
+                });
                 const token = generateToken(user.id);
                 return token;
             } else {
