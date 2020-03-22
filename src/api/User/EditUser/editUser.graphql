@@ -2,5 +2,5 @@ type Query {
     something: String
 },
 type Mutation {
-    editUser(name: String, email: String, bio: String): User!
+    editUser(name: String, email: String, bio: String, avatar: String): User!
 }

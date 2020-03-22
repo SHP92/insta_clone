@@ -14,7 +14,7 @@
 - [X] see the full post
 - [X] upload a post
 - [X] edit / delete the post
-- [ ] see the feed
+- [X] see the feed
 - [ ] see the room 
 - [ ] send / recieve messages (realtime)
 

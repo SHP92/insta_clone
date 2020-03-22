@@ -1,6 +1,7 @@
 export const USER_FRAGMENT = `
     fragment UserParts on User {
         id
+        avatar
         name
         email
         bio
@@ -34,5 +35,30 @@ export const COMMENT_FRAGMENT = `
 export const FULLPOST_FRAGMENT = `
     fragment on FullpostParts on FullPost {
         
+    }
+`;
+
+export const ROOM_FRAGMENT = `
+    fragment RoomParts on Room {
+        id
+        participants {
+            id
+            name
+        }
+    }
+`;
+
+export const MESSAGE_FRAGMENT = `
+    fragment MessageParts on Message {
+        id
+        text
+        from {
+            id
+            name
+        }
+        to {
+            id
+            name
+        }
     }
 `;

@@ -1,5 +1,6 @@
 type User {
   id: ID! @id
+  avatar: String
   name: String! @unique
   email: String! @unique
   bio: String
@@ -59,6 +60,6 @@ type Message {
   text: String!
   from: User! @relation(name: "From")
   to: User! @relation(name: "To")
-  createdAt: DateTime! @createdAt
+  createdAt: DateTime @createdAt
   room: Room!
 }
