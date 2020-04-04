@@ -16,7 +16,7 @@ server.express.use(authenticateJwt);
 server.express.post('/api/uploads', uploads.single('file'), (req, res) => {
     const { file } = req;
     res.json({
-        path: file.path,
+        location: file.location
     })
 });
 
