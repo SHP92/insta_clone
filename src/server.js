@@ -6,12 +6,16 @@ import { schema } from './schema';
 import passport from 'passport';
 import { authenticateJwt } from './passport';
 import { isAuthenticated } from './middleware';
+import uploads from './upload';
 
 const PORT = process.env.PORT || 4000;
 
 const server = new GraphQLServer({ schema, context: ({ request }) => ({ request, isAuthenticated })});
 server.express.use(logger('dev'));
 server.express.use(authenticateJwt);
+server.express.post('api/uploads', uploads.single('file'), (req, res) => {
+    console.log(req.file);
+});
 
 server.start({ port:PORT }, ()=>{
     console.log(`server is running on http://localhost:${PORT}`)
