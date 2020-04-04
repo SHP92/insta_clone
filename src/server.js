@@ -13,8 +13,11 @@ const PORT = process.env.PORT || 4000;
 const server = new GraphQLServer({ schema, context: ({ request }) => ({ request, isAuthenticated })});
 server.express.use(logger('dev'));
 server.express.use(authenticateJwt);
-server.express.post('api/uploads', uploads.single('file'), (req, res) => {
-    console.log(req.file);
+server.express.post('/api/uploads', uploads.single('file'), (req, res) => {
+    const { file } = req;
+    res.json({
+        path: file.path,
+    })
 });
 
 server.start({ port:PORT }, ()=>{
