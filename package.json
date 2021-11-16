@@ -20,7 +20,7 @@
     "@babel/core": "^7.8.7",
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.8.7",
-    "aws-sdk": "^2.653.0",
+    "aws-sdk": "^2.814.0",
     "babel-node": "0.0.1-security",
     "dotenv": "^8.2.0",
     "graphql-tools": "^4.0.7",
